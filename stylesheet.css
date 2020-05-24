@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing, .final{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.landing h2{
+  position: relative;
+  font-size: 8em;
+  color: #fff;
+  z-index: 10000;
+  mix-blend-mode: overlay;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-page{
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.second-page h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  font-weight: 100;
+  padding-top: 3rem;
+}
+
+.poem{
+  line-height: 2rem;
+  font-family: 'Comic Neue', cursive;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.final h2{
+  position: relative;
+  font-size: 4rem;
+  color: #fff;
+  z-index: 10000;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.you{
+  color: red;
+}
+
+.heart{
+  color: red;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  animation: heartbeat 0.8s linear infinite;
+}
+
+@keyframes heartbeat {
+  0%{transform: scale(1,1);}
+  50%{transform: scale(0.9,0.9);}
+  100%{transform: scale(1,1);}
+}
+
+.arrow-link1{
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  scroll-behavior: smooth;
+}
